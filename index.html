@@ -1,6 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Postdoctoral Recommendation Form
+  </title>
+
+
+
+  <style>
+   body { font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 20px; background-color: #f8f8f8; }
+  h1 { text-align: center; }
+  h4 { text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #eee; }
+    .skill-desc { text-align: left; }
+    label { font-weight: bold; display: block; margin-top: 15px; }
+    textarea, input[type="text"], input[type="file"] { width: 100%; padding: 8px; margin-top: 5px; border: 3px solid Blue; border-radius: 4px; }
+    button { margin-top: 20px; padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+ </head>
+ <body>
+  <h1>Postdoctoral Recommendation Form</h1>
+<h4> Ultrafast Processes in Iron-Based Superconductors </h4>
+<b><font color="red">Your responses to these questions are strictly confidential. This information will not be disclosed to the candidate, team members, or collaborators.</font></b>
+
+  <form data-netlify="true" enctype="multipart/form-data" method="POST" name="evaluation"  action="thank-you.html">
+  <input name="form-name" type="hidden" value="evaluation"/>
+
+  <label>
+   Postdoctoral Candidate's Full Name: <font color="red">*</font>
+   </label>
+   <input name="candidate" placeholder="(required)" required="" type="text"/>
+   <label>
+    Referee's Full Name: <font color="red">*</font>
+   </label>
+   <input name="referee" placeholder="(required)" required="" type="text"/>
+   <label>
+    Referee's Institution and Position: <font color="red">*</font>
+   </label>
+   <input name="institution" placeholder="(required)" required="" type="text"/>
+   <label>
+    How long and in what capacity have you known the candidate? <font color="red">*</font>
+   </label>
+   <textarea name="relationship" placeholder="(required)" required=""></textarea>
+
+ 
+   <h2>
+    Evaluation Criteria
+   </h2>
+   <b>
+    1 = Poor/None
+   </b>
+   <br/>
+   <b>
+    2 = Little Extent
+   </b>
+   <br/>
+   <b>
+    3 = Some Extent
+   </b>
+   <br/>
+   <b>
+    4 = Moderate Extent
+   </b>
+   <br/>
+   <b>
+    5 = Above Average Extent
+   </b>
+   <br/>
+   <b>
+    6 = Great Extent
+   </b>
+   <br/>
+   <b>
+    7 = Outstanding
+   </b>
+   <br/>
+   <b>
+    N/A = Not enough information for the evaluation
+   </b>
+   <br/>
+
+<h4>Please evaluate the knowledge and skills of the postdoctoral candidate</h4>
+
+   <table>
+    <thead>
+    
+    </thead>
+    <tbody>
+    </tbody>
+    <tr>
+     <th>
+      Skill/Competency
+     </th>
+     <th>
+      1
+     </th>
+     <th>
+      2
+     </th>
+     <th>
+      3
+     </th>
+     <th>
+      4
+     </th>
+     <th>
+      5
+     </th>
+     <th>
+      6
+     </th>
+     <th>
+      7
+     </th>
+     <th>
+      N/A
+     </th>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Theoretical knowledge
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in Solid-State Physics
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in Quantum Materials (Superconductors, 2D materials, Topological Superconductivity,  Dirac/Weyl semimetals, topological insulators, strongly correlated oxides, etc.)
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in conventional Optics and Spectroscopy
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in Nonlinear Optics
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in ultrafast spectroscopy of Quantum Materials
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q6" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Experimental study (Hands-On skills of the candidate)
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience in experimental study of Quantum materials (by various methods)
+
+</br> <b>List these methods: <font color="red">*</font> </b></br> 
+ <textarea style="width: 90%;"  name="SCmethods_comment" rows="4" placeholder="Comment (required)" required></textarea>
+
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q8" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience in experimental study of phase transitions in quantum materials
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q9" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience in experimental superconductivity (various methods)
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q10" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+
+
 <tr>
      <td style="width: 60%;">
-      Skills in Operation of closed-cycle cryostats or/and cryogenic flow systems
+      Skills in operation of closed-cycle cryostats or/and cryogenic flow systems
      </td>
      <td>
       <input name="q31" required="required" type="radio" value="1"/>
@@ -53,7 +618,7 @@
     </tr>
     <tr>
      <td style="width: 60%;">
-      Skills in Sample mounting in the cryostat for optical access
+      Skills in sample mounting in the cryostat for optical access
      </td>
      <td>
       <input name="q32" required="required" type="radio" value="1"/>
@@ -210,3 +775,2994 @@
       </span>
      </td>
     </tr>
+
+
+
+    <tr>
+     <td style="width: 60%;">
+      Skills to <u>operate</u> ultrafast (femtosecond/picosecond) laser systems
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q11" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in <u>internal alignment</u> of femtosecond or picosecond lasers (i.e. high-level skillful alignment of femtosecond oscillators, OPOs, or/and OPAs).
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q12" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+
+
+    <tr>
+     <td style="width: 60%;">
+Skills in conventional Optical Spectroscopy
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q12B" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+
+
+
+    <tr>
+     <td style="width: 60%;">
+      Skills in assembling and alignment of conventional optical setups.
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q13" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in polarization optics control (waveplates, beamsplitters, isolators)
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q14" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      General skills in <u><b>ultrafast optical spectroscopy</b></u> (pump-probe, transient reflection, etc.)
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q15" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in <u><b>assembling</b></u> of pump-probe setup(s) for ultrafast spectroscopy or assembling other setups for nonlinear optics.
+</br> <b>List these setups: <font color="red">*</font> </b></br> 
+ <textarea style="width: 90%;"  name="NLOsetup_comment" rows="4" placeholder="Comment (required)" required></textarea>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q16" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience in assembling and alignment of THz optical setup.
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q17" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Hands-on experience to use photodetectors, including photomultipliers and IR detectors (experience to choose, amplify, properly connect, and detect signal).
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q18" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in beam diagnostics (autocorrelator, beam profiler)
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q19" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in pulse compression and chirp management (GDD control, dispersion compensation)
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q20" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in methods to measure and characterize pulse duration and chirp? (FROG, SPIDER, etc.)
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q21" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    
+<tr>
+         <td style="width: 60%;">
+      Hands-on experience with fiber optics in conventional optical experiments
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q25" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Hands-on experience with fiber optics in Nonlinear Optics.
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q26" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills to align, and couple ultrafast laser pulses into a single-mode fiber.
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q27" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Assembly and alignment of Diamond Anvil Cells (DACs)
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q28" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Integration of Diamond Anvil Cell with cryostats.
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q29" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Integration of Diamond Anvil Cell in optical experiment
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q30" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    
+
+    <tr>
+     <td style="width: 60%;">
+      Skills to operate PPMS or MPMS
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q35" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience with Atomic Force Microscopy or similar (AFM/STM/... measurement and data analysis)
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q36" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in film or crystal growth (PLD,CVD, DC Magnetron Sputtering, etc.)
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q37" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Data Acquisition
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Hands-on experience with data acquisition systems
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q38" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills to operate lock-in amplifiers or boxcar integrators
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q39" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills to operate oscilloscopes (Tektronix, etc.)
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q40" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills to connect and operate signal digitizers (ADC, etc.)
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q41" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in Programming for data acquisition and automation of experiments (LabVIEW, C#, C++, etc.)
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q42" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Synchronization of data acquisition systems with delay stages
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q43" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in writing software/script for real-time data visualization and monitoring.
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q44" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Data Analysis
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in numerical analysis of experimental data.
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q45" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in quantitative modeling of ultrafast dynamics, carrier lifetime and scattering rates in Quantum Materials.
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q46" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in Interpreting experimental results
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q47" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience with Python, or MATLAB, or Igor Pro
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q48" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience with C#, C++, or similar languages of advanced programming.
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q49" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Experience with other packages for experimental data analysis. </br> <b>List these packages: <font color="red">*</font> </b></br> 
+ <textarea style="width: 90%;"  name="packages_comment" rows="4" placeholder="Comment (required)" required></textarea>
+
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q50" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Scientific Writing &amp; Publishing
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills to write high-level scientific narratives
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q51" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills to produce publication-quality figures suitable for manuscript submission.
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q52" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Ability to write (independently, only by the candidate) high-impact manuscripts for peer-reviewed journals.
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q53" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in manuscript submission (independently, by the candidate).
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q54" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in writing successful responses to reviewers’ comments
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q55" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Scientific presentation skills (seminars, conferences)
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q56" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Research Productivity &amp; Innovation
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Critical analysis of experimental results
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q58" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in independent planning and project execution: hypothesis formulation and planification of experiments to verify his/her hypothesis.
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q59" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Capability to design new experiments or improve existing experimental setups
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q60" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Reliability, Ethics  &amp;  Collaboration
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      How is the candidate dependable, punctual, and able to meet deadlines, especially when working on long-term experiments or time-sensitive tasks?
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q61" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Punctuality and work discipline: Arriving at work on time, respecting designated working hours (start time and breaks), limiting extended absences or unapproved breaks.
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q62" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Ability to maintain the laboratory clean and organized.
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q63" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      How well does the candidate collaborate in a team setting, especially with colleagues from different technical backgrounds?
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q64" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      How he/she clearly explains technical ideas and results to both experts and non-experts?
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q65" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Skills in mentoring students / junior researchers
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q66" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Ability to accept feedback without becoming angry or defensive and use it to strengthen future performance?
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q67" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Act with ethics and integrity, ensuring that all aspects of work meet or exceed professional standards?
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q68" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Listen carefully to others, taking time to understand and ask appropriate questions without interrupting?
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q69" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Build strong, positive working relationships with others (manager, peers, other coworkers) and maintain them over time?
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q70" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Approach work activities with confidence and a positive attitude (e.g., respond to requests in a helpful and constructive manner)?
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q71" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Final Evaluation Notes
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      How well does the candidate meet the requirements of the proposed position to conduct research on Ultrafast Processes in Iron-Based Superconductors?
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q72" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    
+   </table>
+
+
+
+    <label>
+        Starting with the most important, please comment on the top 3 work-related strengths of this candidate. <font color="red">*</font>
+    </label>
+        <textarea name="strengths_comment" rows="5" placeholder="Comment (required)" required></textarea>
+
+    <label>
+       Starting with the most important, please comment on the top 3 work-related weaknesses of this candidate.<font color="red">*</font>
+    </label>
+        <textarea name="weaknesses_comment" rows="5" placeholder="Comment (required)" required></textarea>
+
+    <label>
+        Please describe the candidate's ability to write scientific papers for journals. <font color="red">*</font>
+    </label>
+        <textarea name="paper_writing_comment" rows="5" placeholder="Comment (required)" required></textarea>
+    
+    </tr>
+
+<button type="submit">
+Submit Evaluation
+</button>
+
+
+  </form>
+ </body>
+</html>

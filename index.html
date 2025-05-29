@@ -1,231 +1,478 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
   <meta charset="utf-8"/>
   <title>
-   Postdoc Evaluation Form
+   Postdoctoral Recommendation Form
   </title>
+  <style>
+   body { font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 20px; background-color: #f8f8f8; }
+  h1 { text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #eee; }
+    .skill-desc { text-align: left; }
+    label { font-weight: bold; display: block; margin-top: 15px; }
+    textarea, input[type="text"], input[type="file"] { width: 100%; padding: 8px; margin-top: 5px; border: 3px solid Blue; border-radius: 4px; }
+    button { margin-top: 20px; padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
  </head>
  <body>
-  <h2>
-   Postdoctoral Candidate Evaluation Form
-  </h2>
-  <form name="evaluation" method="POST" data-netlify="true" action="thank-you.html">
-   <input name="form-name" type="hidden" value="evaluation"/>
-   <label>
-    Your Name:
+  <h1>Postdoctoral Recommendation Form</h1>
+<b><font color="red">Your responses to these questions are strictly confidential. This information will not be disclosed to the candidate, team members, or collaborators.</font></b>
+
+  <form data-netlify="true" enctype="multipart/form-data" method="POST" name="evaluation"  action="thank-you.html">
+   <input id="finalScore" name="summary_score" type="hidden"/>
+   <input name="token" type="hidden" value="ABC123"/>
+ 
+  <label>
+   Postdoctoral Candidate's Full Name: <font color="red">*</font>
    </label>
-   <input name="recommender_name" required="required" type="text"/>
-   <br/>
-   <br/>
+   <input name="candidate" placeholder="(required)" required="" type="text"/>
    <label>
-    Candidate Name:
+    Referee's Full Name: <font color="red">*</font>
    </label>
-   <input name="candidate_name" required="required" type="text"/>
-   <br/>
-   <br/>
-   <fieldset>
-    <legend>
-     1. Demonstrates solid understanding of quantum mechanics
-    </legend>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="1"/>
-     1
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="2"/>
-     2
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="3"/>
-     3
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="4"/>
-     4
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="5"/>
-     5
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="6"/>
-     6
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="7"/>
-     7
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q1" required="required" type="radio" value="N/A"/>
-     N/A
-    </label>
-   </fieldset>
-   <fieldset>
-    <legend>
-     2. Understands superconductivity theory
-    </legend>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="1"/>
-     1
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="2"/>
-     2
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="3"/>
-     3
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="4"/>
-     4
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="5"/>
-     5
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="6"/>
-     6
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="7"/>
-     7
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q2" required="required" type="radio" value="N/A"/>
-     N/A
-    </label>
-   </fieldset>
-   <fieldset>
-    <legend>
-     3. Familiar with femtosecond spectroscopy principles
-    </legend>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="1"/>
-     1
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="2"/>
-     2
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="3"/>
-     3
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="4"/>
-     4
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="5"/>
-     5
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="6"/>
-     6
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="7"/>
-     7
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q3" required="required" type="radio" value="N/A"/>
-     N/A
-    </label>
-   </fieldset>
-   <fieldset>
-    <legend>
-     4. Knows condensed matter physics fundamentals
-    </legend>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="1"/>
-     1
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="2"/>
-     2
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="3"/>
-     3
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="4"/>
-     4
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="5"/>
-     5
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="6"/>
-     6
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="7"/>
-     7
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q4" required="required" type="radio" value="N/A"/>
-     N/A
-    </label>
-   </fieldset>
-   <fieldset>
-    <legend>
-     5. Understands photoinduced phase transitions
-    </legend>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="1"/>
-     1
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="2"/>
-     2
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="3"/>
-     3
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="4"/>
-     4
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="5"/>
-     5
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="6"/>
-     6
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="7"/>
-     7
-    </label>
-    <label style="margin-right: 10px;">
-     <input name="q5" required="required" type="radio" value="N/A"/>
-     N/A
-    </label>
-   </fieldset>
-   <br/>
+   <input name="referee" placeholder="(required)" required="" type="text"/>
    <label>
-    Additional Comments:
+    Referee's Institution and Position: <font color="red">*</font>
    </label>
-   <br/>
-   <textarea cols="60" name="comments" rows="5"></textarea>
-   <br/>
-   <br/>
+   <input name="institution" placeholder="(required)" required="" type="text"/>
    <label>
-    Attach recommendation file (PDF or DOC):
+    How long and in what capacity have you known the candidate? <font color="red">*</font>
    </label>
-   <input accept=".pdf,.doc,.docx" name="attachment" type="file"/>
+   <textarea name="relationship" placeholder="(required)" required=""></textarea>
+
+ 
+   <h2>
+    Evaluation Criteria
+   </h2>
+   <b>
+    1 = Poor/None
+   </b>
    <br/>
+   <b>
+    2 = Little Extent
+   </b>
    <br/>
-   <button type="submit">
-    Submit Evaluation
-   </button>
+   <b>
+    3 = Some Extent
+   </b>
+   <br/>
+   <b>
+    4 = Moderate Extent
+   </b>
+   <br/>
+   <b>
+    5 = Above Average Extent
+   </b>
+   <br/>
+   <b>
+    6 = Great Extent
+   </b>
+   <br/>
+   <b>
+    7 = Outstanding
+   </b>
+   <br/>
+   <b>
+    N/A = Not enough information for the evaluation
+   </b>
+   <br/>
+   <table>
+    <thead>
+    
+    </thead>
+    <tbody>
+    </tbody>
+    <tr>
+     <th>
+      Question
+     </th>
+     <th>
+      1
+     </th>
+     <th>
+      2
+     </th>
+     <th>
+      3
+     </th>
+     <th>
+      4
+     </th>
+     <th>
+      5
+     </th>
+     <th>
+      6
+     </th>
+     <th>
+      7
+     </th>
+     <th>
+      N/A
+     </th>
+    </tr>
+    <tr>
+     <td colspan="9" style="font-weight: bold; background-color: #8c8c8c; color: white;">
+      Theoretical knowledge
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in Condensed Matter Physics
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q1" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in Quantum materials (Superconductors, 2D materials, Topological Superconductivity,  Dirac/Weyl semimetals, topological insulators, strongly correlated oxides, etc.)
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q2" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in high-pressure physics of solid
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q3" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in conventional Optics and Spectroscopy:
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q4" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 60%;">
+      Theoretical knowledge in Nonlinear Optics?
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q5" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+    <tr>
+
+
+     <td style="width: 60%;">
+      Would you recommend this person for a demanding research position in nonlinear fiber optics, and why?
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="1"/>
+      <span>
+       1
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="2"/>
+      <span>
+       2
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="3"/>
+      <span>
+       3
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="4"/>
+      <span>
+       4
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="5"/>
+      <span>
+       5
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="6"/>
+      <span>
+       6
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="7"/>
+      <span>
+       7
+      </span>
+     </td>
+     <td>
+      <input name="q74" required="required" type="radio" value="NA"/>
+      <span>
+       N/A
+      </span>
+     </td>
+    </tr>
+   </table>
+
+
+
+    <label>
+        Starting with the most important, please comment on the top 3 work-related strengths of this candidate. <font color="red">*</font>
+    </label>
+        <textarea name="strengths_comment" rows="5" placeholder="Comment (required)" required></textarea>
+
+    <label>
+       Starting with the most important, please comment on the top 3 work-related weaknesses of this candidate.<font color="red">*</font>
+    </label>
+        <textarea name="weaknesses_comment" rows="5" placeholder="Comment (required)" required></textarea>
+
+    <label>
+        Please describe the candidate's ability to write scientific papers for journals. <font color="red">*</font>
+    </label>
+        <textarea name="paper_writing_comment" rows="5" placeholder="Comment (required)" required></textarea>
+    
+    </tr>
+
+   <label>
+    Additional Comments [<font color="red">optional</font>]:
+   </label>
+   <textarea name="comments" rows="3"></textarea>
+   <label>
+    Attach Recommendation Letter (pdf, doc, docx) [<font color="red">optional</font>]:
+   </label>
+   <input accept=".pdf,.doc,.docx" name="file" required="" type="file"/>
+<button type="submit">
+Submit Evaluation
+</button>
+
+
   </form>
  </body>
 </html>

@@ -6,6 +6,7 @@
    Postdoctoral Recommendation Form
   </title>
 
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
 
 
   <style>
@@ -25,7 +26,21 @@
  <body>
   <h1>Postdoctoral Recommendation Form</h1>
 <h4> Ultrafast Processes in Iron-Based Superconductors </h4>
+
+
+  <div id="status">Checking login...</div>
+  <button id="loginBtn" style="display:none;">Login</button>
+  <button id="logoutBtn" style="display:none;">Logout</button>
+
+  <div id="formContainer" style="display:none;">
+
+
+
+
 <b><font color="red">Your responses to these questions are strictly confidential. This information will not be disclosed to the candidate, team members, or collaborators.</font></b>
+
+
+
 
   <form data-netlify="true" enctype="multipart/form-data" method="POST" name="evaluation"  action="thank-you.html">
   <input name="form-name" type="hidden" value="evaluation"/>
@@ -76,7 +91,7 @@
    </b>
    <br/>
    <b>
-    7 = Outstanding  (Top 1%)
+    7 = Outstanding (Top 1%)
    </b>
    <br/>
    <b>
@@ -3764,5 +3779,55 @@ Submit Evaluation
 
 
   </form>
+
+</div>
+
+
+
+
+<script>
+    let auth0 = null;
+
+    async function initAuth0() {
+      auth0 = await createAuth0Client({
+        domain: "https://postdoc-evaluation.netlify.app",
+        client_id: "Uk5Nr7YxQ88lX3FNi9pcOMpXJgZMiXZ9",
+        redirect_uri: window.location.href
+      });
+
+      // обработка редиректа после входа
+      const query = window.location.search;
+      if (query.includes("code=") && query.includes("state=")) {
+        await auth0.handleRedirectCallback();
+        window.history.replaceState({}, document.title, "/");
+      }
+
+      const isAuthenticated = await auth0.isAuthenticated();
+
+      if (!isAuthenticated) {
+        document.getElementById("loginBtn").style.display = "inline";
+        document.getElementById("status").textContent = "🔐 Not logged in";
+      } else {
+        const user = await auth0.getUser();
+        document.getElementById("formContainer").style.display = "block";
+        document.getElementById("logoutBtn").style.display = "inline";
+        document.getElementById("status").textContent = "✅ Logged in as " + user.email;
+      }
+    }
+
+    window.onload = initAuth0;
+
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      auth0.loginWithRedirect({
+        redirect_uri: window.location.href
+      });
+    });
+
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      auth0.logout({ returnTo: window.location.origin });
+    });
+  </script>
+
+
  </body>
 </html>
